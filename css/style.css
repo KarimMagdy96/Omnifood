@@ -45,7 +45,11 @@ body {
 /* reuseable classes */
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+.grid-center-v {
+  align-items: center;
 }
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -60,6 +64,33 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
+}
+.heading-primary,
+.head-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.head-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
 }
 
 /* hero section */
@@ -79,14 +110,7 @@ body {
 .hero-img {
   width: 100%;
 }
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
+
 .hero-description {
   font-size: 2rem;
   line-height: 1.6;
@@ -206,5 +230,78 @@ body {
   padding: 9.6rem 0;
 }
 .setup-img {
+  width: 35%;
+}
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.setup-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.img-box::after,
+.img-box::before {
+  content: "";
+  display: block;
+  /* height: 60%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.img-box::after {
+  z-index: -2;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+}
+.img-box::before {
   width: 50%;
+  padding-bottom: 50%;
+  background-color: #fae5d3;
+  z-index: -1;
+}
+.hreading-featuerd-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+/* meals section */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal-img {
+  width: 100%;
 }
