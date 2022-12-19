@@ -92,6 +92,9 @@ body {
   line-height: 1.2;
   margin-bottom: 9.6rem;
 }
+strong {
+  font-weight: 500;
+}
 
 /* hero section */
 .section-hero {
@@ -313,10 +316,65 @@ body {
 }
 .meal-attr {
   font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 .meal-attrs {
   list-style: none;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+}
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+}
+.tag-vegetaria {
+  background-color: #51cf66;
+}
+.tag-vege {
+  background-color: #94d82d;
+}
+.tag-paleo {
+  background-color: #ffd43b;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  column-gap: 0.4rem;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+}
+.list ion-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.6rem;
 }
