@@ -305,3 +305,18 @@ body {
 .meal-img {
   width: 100%;
 }
+.meal-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+.meal-attr {
+  font-size: 1.8rem;
+}
+.meal-attrs {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
