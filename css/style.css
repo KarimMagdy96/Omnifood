@@ -95,6 +95,26 @@ body {
 strong {
   font-weight: 500;
 }
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.center-text {
+  text-align: center !important;
+}
+.link:link,
+.link:visited {
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
 
 /* hero section */
 .section-hero {
@@ -353,10 +373,14 @@ strong {
   display: flex;
   column-gap: 0.4rem;
 }
+.meal:hover {
+  transform: translateY(-1.2rem);
+}
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 12px;
   overflow: hidden;
+  transition: all 0.4s;
 }
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
@@ -377,4 +401,45 @@ strong {
   display: flex;
   align-items: center;
   column-gap: 1.6rem;
+}
+.all-recapies {
+  text-align: center;
+  font-size: 1.8rem;
+}
+/* testimonials section */
+.section-testmonial {
+  background-color: #fdf2e9;
+}
+.testmonials-container {
+  padding: 9.6rem;
+}
+.testmonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+.testmonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+.testmonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testmonial-name {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+/* gallary section */
+.gallary-item img {
+  display: block;
+  width: 100%;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
 }
